@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.util.Assert;
+
 
 @SpringBootTest
 class SpringJenkinsApplicationTests {
@@ -12,9 +12,9 @@ class SpringJenkinsApplicationTests {
 	
 	static Logger logger =LoggerFactory.getLogger(SpringJenkinsApplication.class);
 	@Test
-	void contextLoads() {
+	public void contextLoads() {
 		logger.info("Test case executed");
-		Assert.hasText("abc", "abc");
+		//assertEquals(true,true);
 	}
 
 }
